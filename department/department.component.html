@@ -1,0 +1,39 @@
+<!-- <button (click)="load()">Load</button>
+<table class="table table-dark table-hover text-center">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (item of std; track item.id;let i=$index; let f=$odd) {
+
+            <tr>
+                <td>{{ item.id }}</td>
+                <td>{{ item.name }}</td>
+                <td>
+                    <button class="btn btn-primary" (click)="getById(item.id)">Show</button>
+                    <button class="btn btn-info" (click)="editdepartment(item)">Edit</button>
+                    <button class="btn btn-danger" (click)="deletedepartment(item.id)">Delete</button>
+                </td>
+            </tr>
+        }@empty {
+            <tr>
+                <td colspan="3"> No departments exist </td>
+            </tr>
+        }
+
+        <div *ngIf="dflag">
+            {{ dstd.id }}::{{ dstd.name }}
+        </div>
+        
+    </tbody>
+</table>
+<div *ngIf="editMode">
+    Editing Student:
+<br> <input type="text" [(ngModel)]="nstd.id"><br>
+    <input type="text" [(ngModel)]="nstd.name"><br>
+    <button (click)="update()">Update</button>
+</div> -->

@@ -1,0 +1,27 @@
+<div class="container text-capitalize">
+  
+    <h1 class="text-center"> Add new student</h1>
+    <div class="mb-3">
+        <label for="studnetId"  class="mb-2"f> studnet Id</label>
+        <input type="text" class="form-control"  id="departmentId" [(ngModel)]="student._id">
+    </div>
+   <div class="mb-3">
+        <label for="studnetName" class="mb-2"> studnet name</label>
+        <input type="text" class="form-control" id="departmentName" [(ngModel)]="student.name">
+   </div>
+    <div class="mb-3">
+       <label for="departmentLocation" class="mb-2"> departments</label>
+       <select name="" id="" [(ngModel)]="student.department">
+        @for (item of departments ; track $index){
+            <option value="{{item._id}}"> 
+                    {{item._id}}
+            </option>
+        }
+       </select>
+    
+    </div>
+   
+    <div class="mb-3 text-center">
+        <button class="btn btn-primary w-25" (click)="save()"> Add </button>
+    </div>
+</div>

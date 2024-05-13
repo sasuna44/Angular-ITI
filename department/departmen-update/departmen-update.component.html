@@ -1,0 +1,21 @@
+<div class="container text-capitalize my-5 py-5  d-flex justify-content-center flex-column align-items-center">
+    <h1 class="mb-3 fw-bold">department udpate</h1>
+   <div class="row bg-dark text-light p-3 rounded-5">
+
+    <div class="mb-3">
+        <label for="departname" >department name</label>
+        <input type="text" id="departname" class="form-control my-3" [(ngModel)]="department.name"/>
+    </div>
+    <div class="mb-3">
+        <label for="departLocation">department location</label>
+        <select name="" id="departLocation" class="form-control my-3"  [(ngModel)]="department.location">
+            <option>smart</option>
+            <option>mansoura</option>
+            <option>alex</option>
+       </select>
+    </div>
+    <div class="mb-3 text-center">
+        <button class="btn btn-primary" (click)="update()"> Update</button>
+    </div>
+   </div>
+</div>

@@ -1,0 +1,47 @@
+.redbg {
+  background-color: red;
+}
+
+.greenbg{
+  background-color: green;
+}
+
+.table {
+  width: 50%;
+  border-collapse: collapse;
+  margin-bottom: 20px; 
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  border: 1px solid #cd3939;
+}
+.table tr:nth-child(odd) td {
+  background-color:rgb(169, 68, 68);
+}
+
+.table tr:nth-child(even) td {
+  background-color: rgb(71, 141, 71); 
+}
+
+input[type="text"] {
+  width: 20%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #423f3f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+

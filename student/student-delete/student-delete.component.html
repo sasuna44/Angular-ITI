@@ -1,0 +1,14 @@
+<div class="container text-capitalize my-5 py-5">
+    <h1 class="text-center fw-bold"> student department</h1>
+    <p class="text-center fw-bold text-danger" >this action will delete the student permanently!!</p>
+    <div class="row my-5 justify-content-center py-5">
+        <div class="card bg-dark text-light  text-capitalize w-50">
+          <div class="card-body">
+            <h5 class="card-title fw-bold mb-3 ">{{student.name}}</h5>
+            <p class="card-text">studnet Id : <span class="text-danger">{{student._id}}</span></p>
+            <p class="card-text"> studnet department : <span class="text-danger">{{student.department}}</span></p>
+          </div>
+          <button class="btn btn-danger my-4" (click)="delete(student._id)"> Delete</button>
+        </div>
+  </div>
+</div>

@@ -1,0 +1,5 @@
+<p>comp1 works! {{fullname}}</p>
+<input type="text"  [(ngModel)]="name" > 
+<!-- <app-comp2 fname="Nawal"></app-comp2>
+<app-comp2></app-comp2> -->
+<app-comp2 [fname]="name" (onNameChanged)="myfun($event)"></app-comp2>

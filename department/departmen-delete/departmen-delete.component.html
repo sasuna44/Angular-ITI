@@ -1,0 +1,14 @@
+<div class="container text-capitalize my-5 py-5">
+    <h1 class="text-center fw-bold"> delete department</h1>
+    <p class="text-center fw-bold text-danger" >this action will delete the department permanently!!</p>
+    <div class="row my-5 justify-content-center py-5">
+        <div class="card bg-dark text-light  text-capitalize w-50">
+          <div class="card-body">
+            <h5 class="card-title fw-bold mb-3 ">{{department.name}}</h5>
+            <p class="card-text">Department Id : <span class="text-danger">{{department._id}}</span></p>
+            <p class="card-text"> department location : <span class="text-danger">{{department.location}}</span></p>
+          </div>
+          <button class="btn btn-danger my-4" (click)="delete(department._id)"> Delete</button>
+        </div>
+  </div>
+</div>

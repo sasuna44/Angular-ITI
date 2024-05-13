@@ -1,0 +1,35 @@
+<div class="container text-capitalize">
+    <h1 class="text-center"> students</h1>
+    <div class="row  my-4 ">
+        <h3 class="w-50" >Add New students <a  class="btn btn-primary w-25" [routerLink] = "['/students/add']" > add</a></h3>
+    </div>
+   <div class="row">
+    <table class="table-hover table table-dark text-center">
+        <thead>
+            <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>department id </td> 
+            <td>image</td>
+            <td colspan="3">Action</td>
+            </tr>
+        </thead>
+        <tbody>
+            @for (item of students ; track $index){
+              <tr>
+                <td>{{item._id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.department}}</td>
+                <img src="{{item.image}}"  alt="{{item.image}}">
+                <td> <a [routerLink]="['/students/details', item._id]"> Details</a></td>
+                <td> <a [routerLink]="['/students/update', item._id]">update </a></td>
+                <td> <a [routerLink]="['/students/delete', item._id]">delete </a></td>
+              </tr>  
+            }@empty {
+                <tr>there is no departmens</tr>
+            }
+            
+        </tbody>
+    </table>
+   </div>
+</div>

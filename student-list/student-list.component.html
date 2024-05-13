@@ -1,0 +1,67 @@
+<!-- <button (click)="load()">Load</button>
+<!-- <a class="nav-link"  [routerLink]="['/student/add']" >Student add</a> -->
+<!-- <div class="container m-5 p-5" >
+   <div class="row justify-content-evenly ">
+    <h1 class="w-50">Add New Studnet</h1>
+    <button class="btn btn-primary w-25 h-25" (click)="goToAdd()">Add</button>
+   </div>
+<br><br>
+<table class="table table-dark table-bordered table-hover text-center">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (item of std; track item.id;let i=$index; let f=$odd) {
+            <tr>
+                <td>{{ item.id }}</td>
+                <td>{{ item.name }}</td>
+                <td>{{ item.age }}</td>
+                <td class="d-flex justify-content-around">
+                    <button class="btn btn-primary" (click)="getById(item.id)">Show</button>
+                    <button class="btn btn-light" (click)="editStudent(item)">Edit</button>
+                    <button class="btn btn-danger" (click)="deleteStudent(item.id)">Delete</button>
+                </td>
+            </tr>
+        }@empty {
+            <tr>
+                <td colspan="4"> No departments exist </td>
+            </tr>
+        }
+        
+    </tbody>
+</table>
+<div *ngIf="dflag" class="bg-dark rounded-5 text-light p-5 text-center">
+    <h1>
+     ID :{{ dstd.id }}
+    </h1> 
+    <h1>
+    Name : {{ dstd.name }}
+    </h1> 
+    <h1>
+    Age :{{dstd.age}}
+    </h1> 
+ </div>
+<div *ngIf="editMode">
+    <h1 class="mb-4">Edit students </h1>
+    <div class="mb-3">
+        <label for="studentId" class="form-label">Student ID</label>
+        <input class="form-control"  type="text"  id="studentId" [(ngModel)]="nstd.id">
+    </div> 
+   
+    <div class="mb-3">
+        <label for="studentName" class="form-label">Student Name</label>
+       <input class="form-control"  type="text"  id="studentName" [(ngModel)]="nstd.name"> 
+    </div>
+    <div class="mb-3">
+        <label for="studentAge" class="form-label">Student Age</label>
+        <input class="form-control"  type="number" id="studentAge" [(ngModel)]="nstd.age">
+    </div>
+    <button class="btn btn-success" (click)="update()">Update</button>
+</div>
+
+</div> -->
